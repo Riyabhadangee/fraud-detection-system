@@ -70,42 +70,6 @@ fraud-detection-system/
 └── 📋 requirements.txt         # Python dependencies
 ```
 
-## 🚀 **Quick Start**
-
-### Option 1: Docker Deployment (Recommended)
-```bash
-# Clone repository
-git clone https://github.com/sunnynguyen-ai/fraud-detection-system.git
-cd fraud-detection-system
-
-# Start all services
-docker-compose up -d
-
-# Access applications
-# 🌐 API Documentation: http://localhost:8000/docs
-# 📊 Dashboard: http://localhost:8501
-# ❤️ Health Check: http://localhost:8000/health
-```
-
-### Option 2: Local Development
-```bash
-# Setup environment
-python -m venv fraud_env
-source fraud_env/bin/activate  # On Windows: fraud_env\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Train models
-python src/data_processing/generate_data.py
-jupyter notebook notebooks/02_model_development.ipynb
-
-# Start API
-uvicorn src.api.fraud_api:app --reload
-
-# Start dashboard (new terminal)
-streamlit run src/monitoring/dashboard.py
-```
 
 ## 🔍 **API Usage Examples**
 
@@ -178,19 +142,6 @@ Actual    0   |4952    45|
 - **Redis**: Caching and session management
 - **pytest**: Testing framework
 
-## 🧪 **Testing**
-
-```bash
-# Run all tests
-pytest tests/ -v
-
-# Run with coverage
-pytest tests/ --cov=src --cov-report=html
-
-# Load testing
-locust -f tests/load_test.py --host=http://localhost:8000
-```
-
 ## 📈 **Monitoring & Analytics**
 
 ### Real-time Metrics
@@ -199,65 +150,10 @@ locust -f tests/load_test.py --host=http://localhost:8000
 - Risk level distributions
 - Feature importance tracking
 
-### Business Impact
-- **Cost Savings**: $2M+ prevented fraudulent transactions monthly
-- **False Positive Reduction**: 23% decrease in legitimate blocks
-- **Processing Speed**: 99.5% of transactions processed in <100ms
-
-## 🚀 **Deployment Options**
-
-### Production Scaling
-```bash
-# Horizontal scaling
-docker-compose up -d --scale fraud_api=3
-
-# With load balancer
-docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d
-```
-
-### Cloud Deployment
-- **AWS**: ECS/EKS with Application Load Balancer
-- **GCP**: Cloud Run or GKE with Ingress
-- **Azure**: Container Instances or AKS
-
-## 🤝 **Contributing**
-
-1. Fork the repository
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
-
-## 📄 **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 **Author**
-
-**Sunny Nguyen**
-
-- 🔗 **GitHub**: [@sunnynguyen-ai](https://github.com/sunnynguyen-ai)
-- 💼 **LinkedIn**: [Connect with me](https://linkedin.com/in/sunnynguyen-ai)
-
-
 ### Technical Expertise
 - **ML Engineering**: Production model deployment, feature engineering, model monitoring
 - **Computer Vision**: Medical image analysis, object detection, image classification
 - **NLP**: Sentiment analysis, text classification, language models
 - **MLOps**: Docker, Kubernetes, CI/CD pipelines, model versioning
 
----
 
-## 🌟 **Star this repository if you found it helpful!**
-
-### Related Projects
-- 🏥 [Medical Image Classifier](https://github.com/sunnynguyen-ai/medical-image-classifier) - Deep learning for pneumonia detection
-- 🏠 [House Price Prediction](https://github.com/sunnynguyen-ai/house-price-prediction) - End-to-end ML project with deployment
-
----
-
-<div align="center">
-
-**⭐ If this project helped you, please consider giving it a star! ⭐**
-
-</div>
