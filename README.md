@@ -3,9 +3,9 @@
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.95+-green.svg)](https://fastapi.tiangolo.com/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://www.docker.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> **Production-ready fraud detection system using ensemble machine learning models with real-time inference, explainable AI, and comprehensive monitoring.**
+
+> **Built an end-to-end fraud detection platform leveraging ensemble machine learning, real-time transaction scoring, explainable AI, and scalable monitoring infrastructure.**
 
 
 ## 🚀 **Key Features**
