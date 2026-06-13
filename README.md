@@ -7,7 +7,6 @@
 
 > **Production-ready fraud detection system using ensemble machine learning models with real-time inference, explainable AI, and comprehensive monitoring.**
 
-![Fraud Detection Demo](https://via.placeholder.com/800x400/1f77b4/ffffff?text=Fraud+Detection+System+Demo)
 
 ## 🚀 **Key Features**
 
