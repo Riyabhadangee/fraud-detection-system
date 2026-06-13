@@ -363,7 +363,7 @@ def generate_and_save_data(config: Optional[DatasetConfig] = None) -> pd.DataFra
     print(f"Fraud transactions: {stats['fraud_transactions']:,}")
     print(f"Normal transactions: {stats['normal_transactions']:,}")
     print(f"Fraud rate: {stats['fraud_rate']:.4f} ({stats['fraud_rate']*100:.2f}%)")
-    print(f"\nTransaction Amounts:")
+    print("\nTransaction Amounts:")
     print(f"  Average: ${stats['avg_transaction_amount']:.2f}")
     print(f"  Median: ${stats['median_transaction_amount']:.2f}")
     print(f"  Range: ${stats['min_transaction_amount']:.2f} - ${stats['max_transaction_amount']:.2f}")
